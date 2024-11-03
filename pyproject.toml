@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "github"
+dynamic = ["version"]
+authors = [
+  { name="Adam Patterson", email="adam@farar.net" },
+]
+description = "GitHub"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+"PyGithub"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/faranalytics/github.git"
+"Bug Tracker" = "https://github.com/faranalytics/github/issues"
+
+[tool.hatch.version]
+path = "github/__about__.py"
